@@ -21,7 +21,7 @@ class MenuHTML extends HTML {
 	 * @param  bool    $https
 	 * @return string
 	 */
-	public static function link($url, $title, $attributes = array(), $https = false)
+	public static function link($url, $title = null, $attributes = array(), $https = false)
 	{
 		$url = URL::to($url, $https);
 
